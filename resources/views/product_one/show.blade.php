@@ -1,0 +1,69 @@
+
+<!-------------------------------------------------------------->
+<!-- 시작 : Content                                                                  -->
+<!-------------------------------------------------------------->
+@extends("layout")
+@section("content")
+
+<br>
+ <!-- Begin Page Content -->
+ <div class="container-fluid">
+
+<!-- Page Heading -->
+<div class="card shadow mb-4">
+    <div class="card-header py-3">
+        <h1 class="m-0 font-weight-bold text-info">Product Information</h1>
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-bordered" width="100%" cellspacing="0" >
+                <tr>
+                    <td width="20%" class="text-info" style="color: green; font-weight: bold;">번호</td>
+                    <td width="80%" align="left">{{$row->id}}</td>
+                </tr>
+                <tr>
+                    <td class="text-info" style="color: black; font-weight: bold;">구분</td>
+                    <td align="left">{{$row->gubuns_name}}</td>
+                </tr>
+                <tr>
+                    <td class="text-info" style="color: black; font-weight: bold;">이름</td>
+                    <td align="left">{{$row->name}}</td>
+                </tr>
+                <tr>
+                    <td class="text-info" style="color: black; font-weight: bold;">가격</td>
+                    <td align="left">{{$row->price}}</td>
+                </tr>
+                <tr>
+			<td width="20%" class="text-info">사진</td>
+			<td width="80%" align="left">
+			<b>파일이름</b> : {{$row->pic}} <br><br>
+			@if($row->pic)
+				<img src="{{ asset('/storage/product_img/' . $row->pic) }}" width="200" 
+    		 	class="img-fluid img-thumbnail mymargin5">
+			@else
+			<img src = "" width = "200" height = "150" class = "img-fluid img-thumbnail mymargin5">
+			@endif
+			</td>
+		</tr>
+              
+            </table>
+        </div>
+        <div align="center" style="margin-top: 20px;">
+            <a href="{{ route('product_one.edit', $row->id) }}" class="btn btn-info" style="color: white;">수정</a>
+            <form action="{{ route('product_one.destroy', $row->id) }}" method="POST" style="display: inline;">
+                @csrf
+                @method('DELETE')
+                <button type="submit" class="btn btn-danger" onClick="return confirm('삭제하시겠습니까?');">삭제</button>
+            </form>
+            <button class="btn btn-secondary" onClick="history.back();" style="margin-left: 10px;">뒤로가기</button>
+        </div>
+    </div>
+</div>
+
+</div>
+<!-- /.container-fluid -->
+
+@endsection
+
+ 
+
