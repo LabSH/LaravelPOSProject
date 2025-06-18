@@ -1,64 +1,27 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+<img width="1407" alt="202012034_p5955" src="https://github.com/user-attachments/assets/20f9d5a9-4af2-4dce-b08e-59a1ddd56827" />
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
 
-## About Laravel
+# 🛒 Laravel 기반 주문 관리 시스템 개발
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## 🗓️ 프로젝트 개요
+- 프로젝트 유형: 개인 프로젝트
+- 개발 기간: 2024년 11월 20일 - 2024년 12월 20일
+  
+## 💻 기술 스택
+- 운영체제 (OS): Linux
+- 데이터베이스 (DBMS): MariaDB
+- 개발 도구(TOOL): PHP, Laravel, phpMyAdmin, ,VScode
+## 🎯 프로젝트 목표
+- PHP 프레임워크 학습 및 응용: 강력한 웹 프레임워크인 Laravel을 깊이 있게 학습하고 실제 애플리케이션 개발에 적용하여 PHP 개발 역량을 강화합니다.
+- MVC 프로그래밍 숙련: Model-View-Controller(MVC) 디자인 패턴을 적극적으로 활용하여 코드의 구조화, 유지보수성, 확장성을 극대화하는 경험을 쌓습니다.
+## ✨ 주요 기능 및 특징
+### 관리자 프로그램
+- 주문 처리: 실시간으로 들어오는 주문을 관리하고 처리합니다.
+- 제품 관리: 상품 등록, 수정, 삭제 등 제품 데이터베이스를 제어합니다.
+- 회원 관리: 사용자 정보를 안전하게 관리하고 필요에 따라 접근 권한을 설정합니다.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
-
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
-
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+### 사용자 프로그램
+- 로그인/회원가입: 사용자가 안전하게 시스템에 접근하고 개인화된 서비스를 이용할 수 있도록 합니다.
+- 간편한 상품 주문: 직관적인 인터페이스를 통해 사용자가 원하는 상품을 쉽게 탐색하고 주문할 수 있도록 지원합니다.
+- 다양한 사용자 기능: 주문 내역 조회, 개인 정보 수정 등 사용자의 편의를 위한 여러 기능을 제공합니다.
+- Sidebar를 이용한 코드 최소화: 공통된 UI 요소인 사이드바를 컴포넌트화하여 코드 중복을 최소화하고 개발 생산성을 향상시켰습니다.
